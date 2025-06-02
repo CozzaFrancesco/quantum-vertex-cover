@@ -63,7 +63,7 @@ Il progetto dimostra:
 2. Il confronto tra soluzioni classiche (ottimali) e quantistiche (con QAOA e VQE).
 3. Come eseguire VQE su una macchina quantistica reale.
 
-📚 Riferimenti
+## 📚 Riferimenti
 - Lucas, A. (2014). Ising formulations of many NP problems. Frontiers in Physics.
 - Documentazione PennyLane
 - Documentazione Qiskit
