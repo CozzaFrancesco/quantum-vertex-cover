@@ -42,15 +42,30 @@ Le variabili binarie \( x_v \) sono mappate su qubit mediante:
 
 1. Clona il repository:
 ```bash
-git clone https://github.com/tuo-username/quantum-vertex-cover.git
+git clone https://github.com/CozzaFrancesco/quantum-vertex-cover.git
 cd quantum-vertex-cover
 ```
+2. (Facoltativo) Inserisci la tua API-KEY e CRN dell'ambiente IBM Quantum.
 
 ## 🚀 Utilizzo
-- Apri il notebook Progetto.ipynb in Jupyter o Google Colab
-- Esegui le celle in ordine per:
-   Definire il grafo di esempio
-   Visualizzare il grafo
-  Risolvere il problema con approccio classico (OR-Tools CP-SAT)
-  Implementare la soluzione quantistica (VQE/QAOA)
-- Analizza i risultati comparando le soluzioni classiche e quantistiche
+1- Apri il notebook Progetto.ipynb in Jupyter o Google Colab
+2. Esegui le celle in ordine per:
+   - Scaricare e importare le librerie necessarie,
+   - Definire il grafo di esempio,
+   - Visualizzare il grafo,
+  - Risolvere il problema con approccio classico (OR-Tools CP-SAT),
+  - Implementare la soluzione quantistica (VQE/QAOA),
+  - Ese
+3. Analizza i risultati comparando le soluzioni classiche e quantistiche
+
+## 📊 Risultati
+Il progetto dimostra:
+
+1. La formulazione del Vertex Cover come problema di ottimizzazione quantistico.
+2. Il confronto tra soluzioni classiche (ottimali) e quantistiche (con QAOA e VQE).
+3. Come eseguire VQE su una macchina quantistica reale.
+
+📚 Riferimenti
+- Lucas, A. (2014). Ising formulations of many NP problems. Frontiers in Physics.
+- Documentazione PennyLane
+- Documentazione Qiskit
