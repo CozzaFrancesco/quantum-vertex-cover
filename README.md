@@ -6,16 +6,15 @@ Il progetto serve come esempio pratico per comprendere come problemi di ottimizz
 
 ## 📌 Indice
 
-- [Problema del Vertex Cover](#vertex-cover)
-- [Formulazione Quantistica](#formulazione-quantistica)
+- [Problema del Vertex Cover](##vertex-cover)
+- [Formulazione Quantistica](##formulazione-quantistica)
 - [Installazione](#installazione)
 - [Utilizzo](#utilizzo)
-- [Struttura del Codice](#struttura-del-codice)
 - [Risultati](#risultati)
 - [Riferimenti](#riferimenti)
 - [Licenza](#licenza)
 
-## 🔍 Vertex Cover
+## 🔍 Vertex Cover 
 
 Dato un grafo non orientato \( G = (V, E) \), un **vertex cover** è un sottoinsieme di vertici \( C ⊆ V \) tale che ogni arco \( (u, v) \in E \) abbia almeno uno dei due estremi in \( C \). L'obiettivo è trovare il vertex cover di dimensione minima.
 
