@@ -6,13 +6,12 @@ Il progetto serve come esempio pratico per comprendere come problemi di ottimizz
 
 ## 📌 Indice
 
-- [Problema del Vertex Cover](##vertex-cover)
-- [Formulazione Quantistica](##formulazione-quantistica)
-- [Installazione](#installazione)
-- [Utilizzo](#utilizzo)
-- [Risultati](#risultati)
-- [Riferimenti](#riferimenti)
-- [Licenza](#licenza)
+- [Problema del Vertex Cover](#-vertex-cover)
+- [Formulazione Quantistica](#-formulazione-quantistica)
+- [Installazione](#-installazione)
+- [Utilizzo](#-utilizzo)
+- [Risultati](#-risultati)
+- [Riferimenti](#-riferimenti)
 
 ## 🔍 Vertex Cover 
 
