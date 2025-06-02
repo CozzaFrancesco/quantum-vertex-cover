@@ -53,7 +53,7 @@ cd quantum-vertex-cover
    - Visualizzare il grafo,
   - Risolvere il problema con approccio classico (OR-Tools CP-SAT),
   - Implementare la soluzione quantistica (VQE/QAOA),
-  - Ese
+  - Eseguire VQE su macchina quantistica IBM reale.
 3. Analizza i risultati comparando le soluzioni classiche e quantistiche
 
 ## 📊 Risultati
