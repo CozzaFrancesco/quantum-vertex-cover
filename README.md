@@ -4,39 +4,53 @@ Questo progetto esplora la risoluzione del problema del Vertex Cover, un classic
 
 Il progetto serve come esempio pratico per comprendere come problemi di ottimizzazione difficili possono essere affrontati nel contesto del Quantum Computing.
 
-## Contenuti
+## 📌 Indice
 
-*   **Introduzione al Vertex Cover**: Descrizione del problema e della sua importanza.
-*   **Formulazione Hamiltoniana**: Dettagli su come il problema del Vertex Cover viene trasformato in un Hamiltoniano quantistico (formulazione Ising/QUBO).
-*   **Funzioni di Utilità**: Funzioni di supporto per la visualizzazione, validazione e valutazione delle soluzioni.
-*   **Definizione del Grafo**: Creazione di un grafo d'esempio su cui applicare gli algoritmi.
-*   **Risoluzione Classica**: Implementazione di un risolutore classico (OR-Tools CP-SAT) per ottenere una soluzione ottima di riferimento.
-*   **Implementazione Quantistica (VQE/QAOA)**: 
+- [Problema del Vertex Cover](#vertex-cover)
+- [Formulazione Quantistica](#formulazione-quantistica)
+- [Installazione](#installazione)
+- [Utilizzo](#utilizzo)
+- [Struttura del Codice](#struttura-del-codice)
+- [Risultati](#risultati)
+- [Riferimenti](#riferimenti)
+- [Licenza](#licenza)
 
-## Problema del Vertex Cover
+## 🔍 Vertex Cover
 
 Dato un grafo non orientato \( G = (V, E) \), un **vertex cover** è un sottoinsieme di vertici \( C ⊆ V \) tale che ogni arco \( (u, v) \in E \) abbia almeno uno dei due estremi in \( C \). L'obiettivo è trovare il vertex cover di dimensione minima.
 
-## Formulazione Quantistica
+**Applicazioni**:
+- Progettazione di reti
+- Bioinformatica
+- Cybersecurity
+- Scheduling e logistica
 
-Il problema viene mappato in un Hamiltoniano \( H = Hₐ + Hᵦ \), dove:
-*   \( Hₐ \) è un termine di penalità che garantisce che ogni arco sia coperto.
-*   \( Hᵦ \) è un termine di costo che mira a minimizzare il numero di vertici selezionati.
+## ⚛️ Formulazione Quantistica
 
-Le variabili binarie \( xᵥ ∈ \{0, 1\} \) per ogni vertice sono mappate su variabili di spin \( sᵥ ∈ \{-1, +1\} \).
+Il problema viene mappato in un Hamiltoniano quantistico:
 
-## Installazione
-Le installazioni sono già incluse nel notebook per comodità.
+\[ H = Hₐ + Hᵦ \]
 
-## Utilizzo
+Dove:
+- \( Hₐ = A \sum_{(u,v) \in E} (1 - x_u)(1 - x_v) \) (termine di penalità)
+- \( Hᵦ = B \sum_{v \in V} x_v \) (termine di costo)
 
-1.  Clona questo repository: bash git clone cd
-2.  2.  Apri il notebook `Progetto.ipynb` in Google Colab.
-3.  Esegui le celle del notebook per installare le dipendenze, definire il grafo e risolvere il problema in modo classico.
-4.  (Aggiungerai qui le istruzioni specifiche per eseguire le parti quantistiche quando saranno pronte).
+Le variabili binarie \( x_v \) sono mappate su qubit mediante:
+\[ x_v = \frac{1 + s_v}{2}, \quad s_v \in \{-1, +1\} \]
 
-## Riferimenti
+## 💻 Installazione
 
-*   Lucas, A. (2014). Ising formulations of many NP problems. Frontiers in Physics. (Citato nel notebook)
-*   Documentazione di PennyLane
-*   Documentazione di Qiskit
+1. Clona il repository:
+```bash
+git clone https://github.com/tuo-username/quantum-vertex-cover.git
+cd quantum-vertex-cover
+```
+
+## 🚀 Utilizzo
+- Apri il notebook Progetto.ipynb in Jupyter o Google Colab
+- Esegui le celle in ordine per:
+   Definire il grafo di esempio
+   Visualizzare il grafo
+  Risolvere il problema con approccio classico (OR-Tools CP-SAT)
+  Implementare la soluzione quantistica (VQE/QAOA)
+- Analizza i risultati comparando le soluzioni classiche e quantistiche
